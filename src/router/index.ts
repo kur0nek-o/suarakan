@@ -2,9 +2,15 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 
 import LoginPage from '@/pages/LoginPage.vue'
 import SignupPage from '@/pages/SignupPage.vue'
+import MainLayout from '@/layouts/MainLayout.vue'
 
 const routes = [
-  { path: '/', component: LoginPage },
+  {
+    path: '/',
+    meta: { layout: MainLayout },
+    component: () => import('@/pages/HomePage.vue')
+  },
+  { path: '/login', component: LoginPage },
   { path: '/sign-up', component: SignupPage }
 ]
 
