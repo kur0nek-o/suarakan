@@ -15,7 +15,7 @@
 
       <p class="text-center text-sm">
         Sudah punya akun?
-        <RouterLink to="/"><span class="text-blue-500">Log in</span></RouterLink>
+        <RouterLink to="/login"><span class="text-blue-500">Log in</span></RouterLink>
       </p>
     </div>
   </div>

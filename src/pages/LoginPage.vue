@@ -17,7 +17,13 @@
           </div>
         </div>
 
-        <ButtonBase text="Log in" type="submit" custom-class="w-full justify-center" />
+        <RouterLink
+          to="/"
+          type="button"
+          class="w-full justify-center rounded-md inline-flex items-center border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >
+          Log in
+        </RouterLink>
       </form>
 
       <p class="text-center text-sm">
@@ -29,7 +35,5 @@
 </template>
 
 <script setup lang="ts">
-import ButtonBase from '@/components/elements/buttons/ButtonBase.vue'
-
 import { InputBase, InputLabel } from '@/components/forms/inputs'
 </script>

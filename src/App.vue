@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="h-full">
     <component :is="$route.meta.layout || 'div'">
       <RouterView />
     </component>

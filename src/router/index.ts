@@ -10,12 +10,13 @@ const routes = [
     meta: { layout: MainLayout },
     component: () => import('@/pages/HomePage.vue')
   },
-  { path: '/login', component: LoginPage },
+  { path: '/login', name: 'login', component: LoginPage },
   { path: '/sign-up', component: SignupPage }
 ]
 
 const router = createRouter({
   history: createMemoryHistory(),
+  strict: true,
   routes
 })
 
